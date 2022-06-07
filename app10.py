@@ -164,7 +164,7 @@ def auto_def():
     MELT_TEMP=MELT_TEMP_def()
     MOTORSPEED=MOTORSPEED_def()
     
-    time.sleep(5)
+   
     
     new_x_df = pd.concat([INSP,MELT_TEMP,MOTORSPEED] ,axis=1)
     
@@ -202,7 +202,7 @@ def auto_def():
         else:
             st.success("정상으로 예측됩니다.")
 
-
+time.sleep(5)
 ##############################################################################
  
 
