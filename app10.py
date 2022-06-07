@@ -67,7 +67,7 @@ def INSP_def():
 ############################################################
 
 def MELT_TEMP_def():
-    st.title('용해탱크 이상탐지 예측 서비스')
+    #st.title('용해탱크 이상탐지 예측 서비스')
     st.title(' ')
     st.subheader('(2) 용해 온도 10개 입력해주세요.')
     st.subheader('시간의 흐름을 판단하기 위해 10개의 값이 필요합니다.')
@@ -111,7 +111,7 @@ def MELT_TEMP_def():
 
 
 def MOTORSPEED_def():
-    st.title('용해탱크 이상탐지 예측 서비스')
+    #st.title('용해탱크 이상탐지 예측 서비스')
     st.title(' ')
     st.subheader('(3) 용해 교반속도 10개 입력해주세요.')
     st.subheader('시간의 흐름을 판단하기 위해 10개의 값이 필요합니다.')
