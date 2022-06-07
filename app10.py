@@ -51,7 +51,7 @@ def INSP_def():
     #st.write('9 생산품의 수분함유량:', INSP9)
     INSP10 = st.slider('10 생산품의 수분함유량을 입력하세요', 0, 5)   
     #st.write('10 생산품의 수분함유량:', INSP10)
-    time.sleep(2)
+    
 
 
     INSP = pd.DataFrame({'INSP':[INSP1,INSP2,INSP3,INSP4,INSP5,INSP6,INSP7,INSP8,INSP9,INSP10]})
@@ -95,7 +95,7 @@ def MELT_TEMP_def():
     #st.write('9 용해 온도:', MELT_TEMP9)
     MELT_TEMP10 = st.slider('10 용해 온도를 입력하세요', 300, 900)  
     #st.write('10 용해 온도:', MELT_TEMP10)
-    time.sleep(2)
+   
 
 
     MELT_TEMP = pd.DataFrame({'MELT_TEMP' : [MELT_TEMP1, MELT_TEMP2, MELT_TEMP3, MELT_TEMP4, MELT_TEMP5, 
@@ -140,7 +140,7 @@ def MOTORSPEED_def():
     #st.write('9 용해 교반속도:', MOTORSPEED9)
     MOTORSPEED10 = st.slider('10 용해 교반속도를 입력하세요', 0, 2000)   
     #st.write('10 용해 교반속도:', MOTORSPEED10)
-    time.sleep(2)
+    
 
     
     MOTORSPEED = pd.DataFrame({'MOTORSPEED' : [MOTORSPEED1, MOTORSPEED2, MOTORSPEED3, MOTORSPEED4, MOTORSPEED5,
@@ -163,6 +163,8 @@ def auto_def():
     INSP=INSP_def()
     MELT_TEMP=MELT_TEMP_def()
     MOTORSPEED=MOTORSPEED_def()
+    
+    time.sleep(5)
     
     new_x_df = pd.concat([INSP,MELT_TEMP,MOTORSPEED] ,axis=1)
     
