@@ -11,7 +11,7 @@ import plotly.express as px
 #from skimage import io
 from keras.models import load_model
 from tensorflow.python import tf2
-from datetime import time
+#from datetime import time
 
 def welcome():
     st.title('이 앱은 용해탱크의 이상상황을 예측하는 앱입니다.')
@@ -202,7 +202,7 @@ def auto_def():
         else:
             st.success("정상으로 예측됩니다.")
 
-time.sleep(5)
+
 ##############################################################################
  
 
